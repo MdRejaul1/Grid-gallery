@@ -6,13 +6,35 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 8px;
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 7px;
+    
+  
+   
 }
 
 .container img{
-   
-    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 5 / 3;
+   height: 100%;
+  width: 100%;
+
+ 
+    border-radius: 10px;
 }
+
+.horizontal-r {
+    grid-column: span 2;
+}
+
+.small-l, .horizontal-m, .horizontal-n, .big-g, .small-s {
+    grid-row:  span 2;
+}
+
+.horizontal-m{
+    grid-row:  span 3; 
+}
+
+
+
 
